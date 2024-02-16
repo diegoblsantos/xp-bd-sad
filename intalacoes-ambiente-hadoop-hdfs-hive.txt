@@ -1,6 +1,9 @@
 Roteiro de instalação do Hadoop 3
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Pre requisito: instalacao do git
+sudo apt install git
+
 Abrir um terminal na máquina ubuntu
 
 
