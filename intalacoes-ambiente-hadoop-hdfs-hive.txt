@@ -191,6 +191,11 @@ localhost:8088
 
 Roteiro de instalação do Hive 3
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pré requisito, hadoop em execução:
+
+cd hadoop-3.2.1/sbin
+./start-all.sh
+
 
 1. Fazer download dos binários do hive
 wget https://downloads.apache.org/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz
@@ -207,7 +212,7 @@ $ tar xzf apache-hive-3.1.2-bin.tar.gz
 
 sudo nano .bashrc
  
-# Adicaode variaveis do Hive
+# Adicao de variaveis do Hive
 export HIVE_HOME=/home/hadoop/hive
 export PATH=$PATH:$HIVE_HOME/bin
  
@@ -234,25 +239,18 @@ hdfs dfs -mkdir -p /user/hive/warehouse
 hdfs dfs -chmod g+w /user/hive/warehouse
 
 
-7. Criar arquivo hive-site.xml
-
-cd $HIVE_HOME/conf
- 
-cp hive-default.xml.template hive-site.xml
- 
-
-8. Atualizar .jar do guava (deve ser o mesmo para hadoop e hive
+7. Atualizar .jar do guava (deve ser o mesmo para hadoop e hive
 
 rm $HIVE_HOME/lib/guava-19.0.jar
 cp $HADOOP_HOME/share/hadoop/hdfs/lib/guava-27.0-jre.jar $HIVE_HOME/lib/
  
 
-9. Criar metadados do Hive
+8. Criar metadados do Hive
  
-$ $HIVE_HOME/bin/schematool –initSchema –dbType derby
+$HIVE_HOME/bin/schematool –initSchema –dbType derby
 
 
-10. Inicializar o Hive
+9. Inicializar o Hive
 
 cd $HIVE_HOME/bin
  
