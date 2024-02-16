@@ -193,7 +193,10 @@ Roteiro de instalação do Hive 3
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Fazer download dos binários do hive
-$ wget https://downloads.apache.org/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz
+wget https://downloads.apache.org/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz
+
+1.1. Renomear diretorio do hive:
+mv apache-hive-3.1.2-bin hive
  
 
 2. Extrair arquivos dos binários do hive
@@ -205,19 +208,19 @@ $ tar xzf apache-hive-3.1.2-bin.tar.gz
 sudo nano .bashrc
  
 # Adicaode variaveis do Hive
-export HIVE_HOME=/home/hdoop/apache-hive-3.1.2-bin
+export HIVE_HOME=/home/hadoop/hive
 export PATH=$PATH:$HIVE_HOME/bin
  
 
 4. Atualizar variaveis de ambiente na memória
-$ source ~/.bashrc
+source ~/.bashrc
 
 
 5. Incluir a variavel HADOOP_HOME no hive:
 
 sudo nano $HIVE_HOME/bin/hive-config.sh
  
-export HADOOP_HOME=/home/hdoop/hadoop-3.2.1
+export HADOOP_HOME=/home/hadoop/hadoop
 
 
 6. Criar diretórios padrão do hive no HDFS:
