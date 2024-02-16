@@ -16,6 +16,8 @@ sudo apt install pdsh
 
 3. Atualizar o arquivo de profile .bashrc e incluir a seguinte entrada:
 
+nano ~/.bashrc
+
 export PDSH_RCMD_TYPE=ssh
 
 # Obs: control+O e enter para salvar.
@@ -64,7 +66,7 @@ mv hadoop-3.2.1 hadoop
 
 12. Confirmar o diretório JAVA_HOME:
 
-ls ls /usr/lib/jvm/java-8-openjdk-amd64/
+ls /usr/lib/jvm/java-8-openjdk-amd64/
 
 
 13. Alterar o arquivo hadoop-env.sh e incluir a variável JAVA_HOME ao final do arquivo:
@@ -76,7 +78,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 
 14. Atualizar o arquivo core-site.xml:
 
-nano ~/home/hadoop/hadoop/etc/hadoop/core-site.xml
+nano ~/hadoop/etc/hadoop/core-site.xml
 
 <configuration>    
     <property>
@@ -148,7 +150,7 @@ nano .bashrc
 
 export HADOOP_HOME=/home/hadoop/hadoop
 export PATH=$PATH:$HADOOP_HOME/bin
-export PATH=$PATH:$HADOOP_HOME/sbin 
+export PATH=$PATH:$HADOOP_HOME/sbin
 export HADOOP_MAPRED_HOME=${HADOOP_HOME}
 export HADOOP_COMMON_HOME=${HADOOP_HOME}
 export HADOOP_HDFS_HOME=${HADOOP_HOME}
@@ -157,7 +159,7 @@ export YARN_HOME=${HADOOP_HOME}
 
 19. Formatar o HDFS:
 
-cd hadoop
+cd ~/hadoop
 bin/hdfs namenode -format
 
 
@@ -184,7 +186,7 @@ sbin/start-yarn.sh
 
 localhost:8088
 
-
+# reinicie a maquina
 
 ===========================================================================================================================
 ===========================================================================================================================
@@ -198,14 +200,15 @@ cd hadoop-3.2.1/sbin
 
 
 1. Fazer download dos binários do hive
+cd ~
 wget https://downloads.apache.org/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz
 
-1.1. Renomear diretorio do hive:
-mv apache-hive-3.1.2-bin hive
- 
 
 2. Extrair arquivos dos binários do hive
-$ tar xzf apache-hive-3.1.2-bin.tar.gz
+tar xzf apache-hive-3.1.2-bin.tar.gz
+
+2.1. Renomear diretorio do hive:
+mv apache-hive-3.1.2-bin hive
 
 
 3. Atualizar variaveis de ambiente:
