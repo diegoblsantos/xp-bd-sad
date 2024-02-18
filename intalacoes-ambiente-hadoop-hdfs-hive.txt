@@ -252,8 +252,9 @@ cp $HADOOP_HOME/share/hadoop/hdfs/lib/guava-27.0-jre.jar $HIVE_HOME/lib/
  
 
 8. Criar metadados do Hive
- 
-$HIVE_HOME/bin/schematool –initSchema –dbType derby
+
+cd $HIVE_HOME/bin/
+schematool –initSchema –dbType derby
 
 
 9. Inicializar o Hive
