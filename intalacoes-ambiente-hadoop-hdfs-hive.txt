@@ -198,7 +198,7 @@ Roteiro de instalação do Hive 3
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Pré requisito, hadoop em execução:
 
-cd hadoop-3.2.1/sbin
+cd ~/hadoop/sbin
 ./start-all.sh
 
 
