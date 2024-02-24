@@ -1,0 +1,11 @@
+{
+    "type": "record",
+    "name": "Nome",
+    "fields": [
+        {"name": "nome", "type": "string"},
+        {"name": "regiao", "type": "int"},
+        {"name": "freq", "type": "int"},
+        {"name": "rank", "type": "int"}
+        {"name": "sexo", "type": "string"}
+    ]
+}
