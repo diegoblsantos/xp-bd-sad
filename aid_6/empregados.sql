@@ -3,7 +3,7 @@ create external table empregados (
 	NOME string, 
 	SOBRENOME string, 
 	EMAIL string, 
-	CARGO_ID int, 
+	CARGO_ID string, 
 	SALARIO decimal(10,2), 
 	GERENTE_ID string, 
 	DEPARTAMENTO_ID int

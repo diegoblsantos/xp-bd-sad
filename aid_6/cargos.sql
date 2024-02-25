@@ -1,5 +1,5 @@
 create external table cargos (
-	CARGO_ID int, 
+	CARGO_ID string, 
 	NOME_CARGO string
 )
 row format delimited 
