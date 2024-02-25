@@ -1,4 +1,4 @@
-CREATE EXTERNAL TABLE ibge_orc
+CREATE EXTERNAL TABLE ibge_parquet
 (
 nome string,
 regiao int,
