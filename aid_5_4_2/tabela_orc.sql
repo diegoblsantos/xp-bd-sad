@@ -7,4 +7,4 @@ rank int,
 sexo string
 ) 
 STORED AS ORC
-location '/xp/bd/ibge/ibge_orc';
+location '/xp/bd/ibge/orc';
