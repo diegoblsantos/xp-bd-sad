@@ -24,9 +24,9 @@ def csv_to_avro(csv_file, avro_file, schema_dict):
 
 # Exemplo de utilização
 
-csv_file = "D:/IGTI/Banco de Dados em Arquivos/repositorio/xp-bd-sad/aid_5_2_2/nomes-ibge.csv"
-avro_file = "D:/IGTI/Banco de Dados em Arquivos/repositorio/xp-bd-sad/aid_5_2_2/nomes-ibge.avro"
-avro_schema_file = "D:/IGTI/Banco de Dados em Arquivos/repositorio/xp-bd-sad/aid_5_2_2/schema_nomes.avsc"
+csv_file = "/home/hadoop/xp-bd-sad/aid_5_2_2/nomes-ibge.csv"
+avro_file = "/home/hadoop/xp-bd-sad/aid_5_2_2/nomes-ibge.avro"
+avro_schema_file = "/home/hadoop/xp-bd-sad/aid_5_2_2/schema_nomes.avsc"
 
 # Esquema Avro correspondente aos dados do CSV
 avro_schema = """
