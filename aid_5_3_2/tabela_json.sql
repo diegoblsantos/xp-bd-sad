@@ -6,5 +6,5 @@ freq int,
 rank int,
 sexo string
 ) 
-ROW FORMAT SERDE 'org.apache.hcatalog.data.JsonSerDe'
+ROW FORMAT SERDE 'org.apache.hadoop.hive.contrib.serde2.JsonSerde'
 location '/xp/bd/ibge/json';
