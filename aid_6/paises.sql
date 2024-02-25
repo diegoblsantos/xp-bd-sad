@@ -1,5 +1,5 @@
 create external table paises (
-	PAIS_ID int, 
+	PAIS_ID string, 
 	PAIS_NOME string,
 	REGIAO_ID int
 )

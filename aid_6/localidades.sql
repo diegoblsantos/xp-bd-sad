@@ -2,7 +2,7 @@ create external table localidades (
 	LOCALIDADE_ID int, 
 	CIDADE string,
 	ESTADO string,
-	PAIS_ID int
+	PAIS_ID string
 )
 row format delimited 
 fields terminated by ',' 
