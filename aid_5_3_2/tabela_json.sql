@@ -6,5 +6,5 @@ freq int,
 rank int,
 sexo string
 ) 
-ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
+ROW FORMAT SERDE 'org.apache.hcatalog.data.JsonSerDe'
 location '/xp/bd/ibge/json';
