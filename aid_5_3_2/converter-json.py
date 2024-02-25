@@ -20,10 +20,10 @@ def csv_to_json(csv_file, json_file):
         json.dump(data_dict, f, indent=4)
 
 # Nome do arquivo CSV de entrada
-csv_file = "D:/IGTI/Banco de Dados em Arquivos/repositorio/xp-bd-sad/aid_5_3_2/nomes-ibge.csv"
+csv_file = "/home/hadoop/xp-bd-sad/aid_5_3_2/nomes-ibge.csv"
 
 # Nome do arquivo JSON de saída
-json_file = "D:/IGTI/Banco de Dados em Arquivos/repositorio/xp-bd-sad/aid_5_3_2/nomes-ibge.json"
+json_file = "/home/hadoop/xp-bd-sad/aid_5_3_2/nomes-ibge.json"
 
 # Chama a função para converter CSV para JSON
 csv_to_json(csv_file, json_file)
