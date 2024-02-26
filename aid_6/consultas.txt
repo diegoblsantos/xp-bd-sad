@@ -1,0 +1,6 @@
+- Realizar consultas 
+	. Quais pessoas ganham mais do que 10k
+	. Quais pessoas ganham mais do que 10k e trabalham no departamento 90
+	. Exibir o nome das pessoas e os nomes dos departamentos que elas trabalham
+	. Exibir o nome das pessoas e os nomes das cidades que elas trabalham
+	. Exibir o nome das pessoas, nomes das cidades e nomes dos países que elas trabalham
