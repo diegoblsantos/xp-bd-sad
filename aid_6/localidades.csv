@@ -1,24 +1,24 @@
 LOCALIDADE_ID,CIDADE,ESTADO,pais_id
 1000,Roma,NULL,IT
 1100,Venice,NULL,IT
-1200,Tokyo,"Tokyo Prefecture",JP
+1200,Tokyo,Tokyo Prefecture,JP
 1300,Hiroshima,NULL,JP
 1400,Southlake,Texas,US
-1500,"South San Francisco",California,US
-1600,"South Brunswick","New Jersey",US
+1500,South San Francisco,California,US
+1600,South Brunswick,New Jersey,US
 1700,Seattle,Washington,US
 1800,Toronto,Ontario,CA
 1900,Whitehorse,Yukon,CA
 2000,Beijing,NULL,CN
 2100,Bombay,Maharashtra,IN
-2200,Sydney,"New South Wales",AU
+2200,Sydney,New South Wales,AU
 2300,Singapore,NULL,SG
 2400,London,NULL,UK
 2500,Oxford,Oxford,UK
 2600,Stretford,Manchester,UK
 2700,Munich,Bavaria,DE
-2800,"Sao Paulo","Sao Paulo",BR
+2800,Sao Paulo,Sao Paulo,BR
 2900,Geneva,Geneve,CH
 3000,Bern,BE,CH
 3100,Utrecht,Utrecht,NL
-3200,"Mexico CIDADE","Distrito Federal,",MX
+3200,Mexico CIDADE,Distrito Federal,,MX
